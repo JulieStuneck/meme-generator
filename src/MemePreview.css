@@ -1,5 +1,6 @@
 .memePreview {
     display: flex;
+    background: none;
     justify-content: space-around;
     border: 5px ridge gray;    
     background-color: #ddd;
@@ -17,10 +18,14 @@
 
 .textTop {
     position: absolute;
-    top: 1em;
+    top: 1.25em;
+    background: none;
+    font-size: 2rem;
 }
 
 .textBottom {
     position: absolute;
-    bottom: 1em;
+    bottom: 1.25em;
+    background: none;
+    font-size: 2rem;
 }

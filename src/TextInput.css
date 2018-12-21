@@ -1,0 +1,34 @@
+.textInput {		
+    background: none;
+    background-color: #eee;
+	padding: 1em 6em;
+	margin: 2em 1em;
+	-webkit-box-shadow: 10px 8px 37px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 8px 37px -4px rgba(0,0,0,0.75);
+box-shadow: 10px 8px 37px -4px rgba(0,0,0,0.75);
+}
+
+.textInput h2 {	
+    background: none;
+    color: gray;
+}
+
+.inputRow {
+	display: flex;
+	justify-content: space-around;
+	background: none;
+}
+
+input {
+	background: none;
+	background-color: #eee;
+	font-size: 1rem;
+	padding: .25em;
+	margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputRow {
+    flex-direction: column;
+  }
+}

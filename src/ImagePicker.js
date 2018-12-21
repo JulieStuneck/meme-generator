@@ -5,10 +5,9 @@ import './ImagePicker.css';
 class ImagePicker extends Component {
     render() {
         const { selectImage } = this.props;
-        console.log(selectImage)
         return (
             <div className="imagePicker">
-                <h2>First, select a picture:</h2>
+                <h2>Select a picture:</h2>
                 <div className="imageChoices">
                     <img src="/Images/Bird.jpeg" alt="bird" onClick={selectImage} />
                     <img src="Images/Cat.jpg" alt="cat" onClick={selectImage} />
