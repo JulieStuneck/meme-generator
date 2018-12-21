@@ -1,0 +1,26 @@
+.memePreview {
+    display: flex;
+    justify-content: space-around;
+    border: 5px ridge gray;    
+    background-color: #ddd;
+    height: 20em;
+    width: 20em;
+    padding: .5em;
+    position: relative;
+    color: white;
+}
+
+.memePreview img {
+    height: 20em;
+    width: 20em;
+}
+
+.textTop {
+    position: absolute;
+    top: 1em;
+}
+
+.textBottom {
+    position: absolute;
+    bottom: 1em;
+}
