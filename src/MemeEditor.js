@@ -29,10 +29,9 @@ class MemeEditor extends Component {
 
 
     render() {
-        // const { defaultImage } = this.state;
         return (
             <div className="container">
-                <h1>Meme-Creator</h1>
+                <h1>Meme-Generator</h1>
                 <ImagePicker className="imagePicker"
                     selectImage={this.selectImage}
                 />

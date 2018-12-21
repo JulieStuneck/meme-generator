@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "./TextInput.css"
 
 class TextInput extends Component {
 
@@ -7,19 +7,22 @@ class TextInput extends Component {
         const { setTopText, setBottomText, topText, bottomText } = this.props;
         return (
             <div className="textInput">
-                <input
-                    type="text"
-                    value={topText}
-                    onChange={setTopText}
-                    placeholder="Enter Top Text Here"
-                />
+                <h2>Add Text:</h2>
+                <div className="inputRow"> 
+                    <input
+                        type="text"
+                        value={topText}
+                        onChange={setTopText}
+                        placeholder="Enter Top Text Here"
+                    />
 
-                <input
-                    type="text"
-                    value={bottomText}
-                    onChange={setBottomText}
-                    placeholder="Enter Bottom Text Here"
-                />
+                    <input
+                        type="text"
+                        value={bottomText}
+                        onChange={setBottomText}
+                        placeholder="Enter Bottom Text Here"
+                    />
+                </div>
             </div>
         );
     }
