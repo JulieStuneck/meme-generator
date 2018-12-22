@@ -27,9 +27,10 @@ img {
     width: 8em;
 }
 
-.imageChoices img:focus {
-  border: 2px dashed red;
-}
+/*.selectedPic {
+    border: solid .25em #f69d3c;
+}*/
+
 
 @media only screen and (max-width: 600px) {
   .imageChoices {
