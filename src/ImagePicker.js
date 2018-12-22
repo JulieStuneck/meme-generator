@@ -9,10 +9,10 @@ class ImagePicker extends Component {
             <div className="imagePicker">
                 <h2>Select a picture:</h2>
                 <div className="imageChoices">
-                    <img src="/Images/Bird.jpeg" alt="bird" onClick={selectImage} />
-                    <img src="Images/Cat.jpg" alt="cat" onClick={selectImage} />
-                    <img src="/Images/Dog.jpeg" alt="dog" onClick={selectImage} />
-                    <img src="/Images/Girl.jpg" alt="girl" onClick={selectImage} />
+                    <img src="/Images/Bird.jpeg" alt="bird" className="selectedPic" onClick={selectImage} />
+                    <img src="Images/Cat.jpg" alt="cat" className="selectedPic" onClick={selectImage} />
+                    <img src="/Images/Dog.jpeg" alt="dog" className="selectedPic" onClick={selectImage} />
+                    <img src="/Images/Girl.jpg" alt="girl" className="selectedPic" onClick={selectImage} />
                 </div>
             </div>
         );
