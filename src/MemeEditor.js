@@ -8,7 +8,7 @@ class MemeEditor extends Component {
     constructor() {
         super();
         this.state = {
-            image: "/Images/Bird.jpeg",            
+            image: "/Images/Bird.jpg",            
             topText: '',
             bottomText: ''
         }
