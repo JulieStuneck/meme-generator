@@ -8,7 +8,8 @@ class MemeEditor extends Component {
     constructor() {
         super();
         this.state = {
-            image: "/Images/Bird.jpg",            
+            image: "/Images/Bird.jpg", 
+            //border: 'solid .25em #f69d3c;',          
             topText: '',
             bottomText: ''
         }
@@ -16,7 +17,9 @@ class MemeEditor extends Component {
     selectImage = (e) => {
         //console.log(e.target.src);
         this.setState({ image: e.target.src })
+        
     }
+    
     setTopText = (e) => {
         const newTopText = e.target.value;
         this.setState({ topText: newTopText })
