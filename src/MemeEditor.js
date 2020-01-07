@@ -8,8 +8,8 @@ class MemeEditor extends Component {
     constructor() {
         super();
         this.state = {
-            image: "/Images/Bird.jpg", 
-            //border: 'solid .25em #f69d3c;',          
+            image: "Images/Bird.jpg", 
+            //selected: "",
             topText: '',
             bottomText: ''
         }
@@ -19,7 +19,18 @@ class MemeEditor extends Component {
         this.setState({ image: e.target.src })
         
     }
-    
+
+   /* showSelected = () => {
+        let className = '';
+        this.props.image ? className = 'selectedPic' : className = '';
+
+        //const currentSelectedPic = 
+        //this.image ? className='selectedPic' : classname = ''
+
+        //const currentSelectedPic = ( "className='selectedPic'" );
+        //this.setState({ selected: currentSelectedPic })
+    }
+    */
     setTopText = (e) => {
         const newTopText = e.target.value;
         this.setState({ topText: newTopText })
@@ -37,6 +48,7 @@ class MemeEditor extends Component {
                 <h1>Meme-Generator</h1>
                 <ImagePicker className="imagePicker"
                     selectImage={this.selectImage}
+                    showSelected={this.showSelected}
                 />
                 <MemePreview className="memePreview"
                     image={this.state.image}

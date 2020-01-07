@@ -27,9 +27,9 @@ img {
     width: 8em;
 }
 
-/*.selectedPic {
+.selectedPic {
     border: solid .25em #f69d3c;
-}*/
+}
 
 
 @media only screen and (max-width: 600px) {
